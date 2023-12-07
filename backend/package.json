@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Blog App",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
     "nodemon": "^3.0.2"
   }
 }
