@@ -7,6 +7,7 @@ const app = express();
 //     res.send("Hello World!")
 // })
 //NishNish
+app.use(express.json());
 app.use("/api/user", router);
 
 mongoose.connect("mongodb+srv://admin:NishNish@cluster0.g3o25kk.mongodb.net/?retryWrites=true&w=majority"
