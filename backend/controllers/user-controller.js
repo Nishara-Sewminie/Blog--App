@@ -42,8 +42,8 @@ export const signup = async (req,res,next)=>{
     return res.status(201).json({user});
 };
 
-export const login = async (res,req,next) => {
-    const{email, password} = req.body;
+export const login = async (req,res,next) => {
+    const{ email, password } = req.body;
     let existingUser;
     try{
         existingUser = await User.findOne({email});
